@@ -12,7 +12,7 @@ class MainController extends Controller
 
     public function index() {
 
-        $houses = House :: all();
+        $houses = Train :: all();
 
         return view("welcome", compact('trains'));
     }
