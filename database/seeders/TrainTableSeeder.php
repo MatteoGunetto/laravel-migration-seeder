@@ -26,7 +26,9 @@ class TrainTableSeeder extends Seeder
         $train ->in_orario = "true";
         $train ->cancellato = "false";
 
+        $train -> save();
 
+        Train :: factory() -> count(100) -> create();
 
     }
 }

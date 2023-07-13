@@ -12,8 +12,8 @@ class MainController extends Controller
 
     public function index() {
 
-        $houses = Train :: all();
+        $train = Train :: all();
 
-        return view("welcome", compact('trains'));
+        return view("welcome", compact('Train'));
     }
 }

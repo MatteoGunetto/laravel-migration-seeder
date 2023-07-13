@@ -18,12 +18,12 @@ class trainsFactory extends Factory
     {
         return [
             "azienda" => fake() -> paragraphs(1, true),
-            "stazione di partenza" =>  fake() -> city(),
-            "stazione di arrivo" =>  fake() -> city(),
-            "orario di partenza" => fake() -> numberBetween(0, 24),
-            "orario di arrivo" => fake() -> numberBetween(0, 24),
-            "codice treno" => fake() -> unique() -> numerify('##########'),
-            "numero carrozze" => fake() -> numberBetween(0, 15),
+            "stazione_di_partenza" =>  fake() -> city(),
+            "stazione_di_arrivo" =>  fake() -> city(),
+            "orario_di_partenza" => fake() -> numberBetween(0, 24),
+            "orario_di_arrivo" => fake() -> numberBetween(0, 24),
+            "codice_treno" => fake() -> unique() -> numerify('##########'),
+            "numero_carrozze" => fake() -> numberBetween(0, 15),
             "in_orario" => fake() -> boolean(),
             "cancellato" => fake() -> boolean()
         ];
