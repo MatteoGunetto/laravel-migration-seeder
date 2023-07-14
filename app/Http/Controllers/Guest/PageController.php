@@ -14,6 +14,6 @@ class MainController extends Controller
 
         $trains = Train :: all();
 
-        return view("welcome", compact('Train'));
+        return view("welcome", compact('Trains'));
     }
 }
